@@ -33,9 +33,33 @@ Funcionalidades Mínimas
         [X] alteração,
         [X] remoção
 
-    []Inicialização da urna e o término da votação devem ser feitos utilizando uma senha.
+    [X]Inicialização da urna e o término da votação devem ser feitos utilizando uma senha.
         [X]Inicialização
-        []Termino
-    []Somente a pessoa credenciada pelo sistema tem a senha de início e término da eleição.
+        [X]Termino
+    [X]Somente a pessoa credenciada pelo sistema tem a senha de início e término da eleição.
     [X]Cada eleitor pode votar uma única vez, utilizando seu titulo de eleitor.
-    []O eleitor pode votar em branco ou nulo.
+    [X]O eleitor pode votar em branco ou nulo.
+
+#Como rodar subir o Banco
+
+## Subir o docker
+
+```
+docker-compose up -d
+
+```
+
+## Rodando as migrations com FlyWay
+
+E nescessario criar as migarations dentro de app/src/main/java/urnaeletronica/BackEnd/Migration, acesse a [documentacao][https://documentation.red-gate.com/fd/migrations-184127470.html] para verificar como criar a sua :
+
+
+```
+ ./gradlew flywayMigrate    
+```
+
+## Rodando a aplicacao
+
+``` 
+./gradlew run
+```
