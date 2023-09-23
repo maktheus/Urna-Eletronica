@@ -21,6 +21,7 @@ Ao final da eleição, o sistema deverá mostrar os resultados da urna atual inc
 Considere uma votação com apenas um turno.
 
 Funcionalidades Mínimas
+
     [X]Gerenciamento de eleitores
         [X] cadastro,
         [X] consulta,
@@ -51,7 +52,8 @@ docker-compose up -d
 
 ## Rodando as migrations com FlyWay
 
-E nescessario criar as migarations dentro de app/src/main/java/urnaeletronica/BackEnd/Migration, acesse a [documentacao][https://documentation.red-gate.com/fd/migrations-184127470.html] para verificar como criar a sua :
+É necessário criar as migrações dentro de `app/src/main/java/urnaeletronica/BackEnd/Migration`. Acesse a [documentação](https://documentation.red-gate.com/fd/migrations-184127470.html) para verificar como criar a sua:
+
 
 
 ```
