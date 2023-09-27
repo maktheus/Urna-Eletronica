@@ -25,7 +25,6 @@ public class ResultsFrame extends Frame {
         frame.setLayout(new java.awt.GridBagLayout());
         
 
-        
         panel = new JPanel();
         panel.setBackground(new java.awt.Color(0, 0, 0));
 

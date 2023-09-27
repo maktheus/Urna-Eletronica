@@ -6,7 +6,6 @@ import javax.swing.*;
 import urnaeletronica.BackEnd.Controllers.LoginController;
 import urnaeletronica.FrontEnd.Components.ButtonComponent;
 import urnaeletronica.FrontEnd.Frames.Frame;
-import urnaeletronica.FrontEnd.Frames.MainFrames.MainFrame;
 import urnaeletronica.FrontEnd.Frames.ResultsFrames.ResultsFrame;
 
 public class EndLoginFrame extends Frame {
