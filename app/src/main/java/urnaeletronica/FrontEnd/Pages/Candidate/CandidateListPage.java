@@ -6,7 +6,10 @@ import urnaeletronica.BackEnd.Controllers.CandidateController;
 import urnaeletronica.BackEnd.Models.Candidate;
 import urnaeletronica.FrontEnd.Components.ButtonComponent;
 import urnaeletronica.FrontEnd.Components.FormInputComponent;
+import urnaeletronica.FrontEnd.Frames.CandidateShowFrames.CandidateShowFrame;
 import urnaeletronica.FrontEnd.Pages.Page;
+
+
 
 
 public class CandidateListPage extends Page {
@@ -55,7 +58,11 @@ public class CandidateListPage extends Page {
                 Candidate candidate = CandidateController.getCandidate(etitulo);
                 if(candidate != null){
                     JOptionPane.showMessageDialog(null, "Candidato encontrado com sucesso!");
+                    CandidateShowFrame candidateShowComponent = new CandidateShowFrame(candidate);
 
+                    setChangePanel(panel, new CandidatePage(frame).getPanel());
+                }else{
+                    JOptionPane.showMessageDialog(null, "Candidato não encontrado!");
                     setChangePanel(panel, new CandidatePage(frame).getPanel());
                 }
             } catch (Exception e) {
